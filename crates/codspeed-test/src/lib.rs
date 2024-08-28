@@ -1,9 +1,16 @@
 pub fn fibonacci(n: u64) -> u64 {
-    match n {
-        0 => 1,
-        1 => 1,
-        n => fibonacci(n - 1) + fibonacci(n - 2),
+    if n == 0 {
+        return 0;
     }
+
+    let mut a = 0;
+    let mut b = 1;
+    for _ in 0..n {
+        let tmp = b;
+        b += a;
+        a = tmp;
+    }
+    b
 }
 
 #[cfg(test)]
