@@ -3,6 +3,7 @@ use codspeed_test::fibonacci;
 
 pub fn fibonacci_benchmark(c: &mut Criterion) {
     c.bench_function("fibonacci(20)", |b| b.iter(|| fibonacci(black_box(20))));
+    c.bench_function("fibonacci(30)", |b| b.iter(|| fibonacci(black_box(30))));
 }
 
 criterion_group!(benches, fibonacci_benchmark);
