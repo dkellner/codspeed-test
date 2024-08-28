@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 
 [dev-dependencies]
+codspeed-criterion-compat = "2.6.0"
 criterion = "0.5.1"
 
 [[bench]]

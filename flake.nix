@@ -23,6 +23,8 @@
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = (with pkgs; [
             rust
+
+            cargo-codspeed
           ]);
         };
       }
