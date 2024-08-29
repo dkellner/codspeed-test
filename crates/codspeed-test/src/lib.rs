@@ -1,3 +1,4 @@
+/// Compute the nth element in the Fibonacci sequence.
 pub fn fibonacci(n: u16) -> u64 {
     let n: i32 = n.into();
     let sq5 = 5.0f64.sqrt();
