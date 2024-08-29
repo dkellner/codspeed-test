@@ -1,5 +1,5 @@
-pub fn fibonacci(n: u64) -> u64 {
-    let n: i32 = n.try_into().unwrap();
+pub fn fibonacci(n: u16) -> u64 {
+    let n: i32 = n.into();
     let sq5 = 5.0f64.sqrt();
     let result = 1.0 / sq5 * ((1.0 + sq5) / 2.0).powi(n) - 1.0 / sq5 * ((1.0 - sq5) / 2.0).powi(n);
     result.round() as u64
